@@ -3,3 +3,5 @@
 # no exercicio 26 não foi explicado como não calcular os espaços dentro da frase
 
 ## posso usar dois ou mais métodos no msm objeto
+
+# Como centralizar um print =======   print('{:=^35}'.format(' Carregando Resultados...')) ==== ex.028.py
