@@ -5,3 +5,4 @@
 ## posso usar dois ou mais métodos no msm objeto
 
 # Como centralizar um print =======   print('{:=^35}'.format(' Carregando Resultados...')) ==== ex.028.py
+# Aula 11 ensina as cores
