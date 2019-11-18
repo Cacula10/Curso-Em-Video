@@ -2,9 +2,9 @@ numero = int(input('Digite um numero inteiro: '))
 print('\033[1;35m=>\033[m' * 40)
 print('{:^80}'.format('\033[1;33mESCOLHA UMA DAS BASES PARA CONVERSÃO: \033[m'))
 print('')
-print('[ 1 ] Converter para BINÁRIO')
-print('[ 2 ] Converver para OCTAL')
-print('[ 3 ] Converter para HEXADECIMAL')
+print('''[ 1 ] Converter para BINÁRIO
+[ 2 ] Converver para OCTAL
+[ 3 ] Converter para HEXADECIMAL''')
 print('\033[1;35m=>\033[m' * 40)
 opção = str(input('sua opção: '))[0]
 while opção == '1' or '2' or '3':
