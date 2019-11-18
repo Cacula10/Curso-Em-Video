@@ -1,5 +1,6 @@
 from time import sleep
 from datetime import date
+print('{:^70}'.format('\033[1;34mSISTEMA DE CONTROLE DE ALISTAMENTO MILITAR\033[m'))
 ano_atual = date.today().year
 nascimento = int(input('Ano de nascimento: '))
 idade = ano_atual - nascimento
