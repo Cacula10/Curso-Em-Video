@@ -6,19 +6,16 @@ print('''[ 1 ] Converter para BINÁRIO
 [ 2 ] Converver para OCTAL
 [ 3 ] Converter para HEXADECIMAL''')
 print('\033[1;35m=>\033[m' * 40)
-opção = str(input('sua opção: '))[0]
+opção = int(input('sua opção: '))
 while opção == '1' or '2' or '3':
-    if opção == '1':
-        binario = bin(numero)
-        print('CONVERTENDO PARA BINÁRIO: ', '\033[1;34m', str(binario[2:]), '\033[m')
+    if opção == 1:
+        print('CONVERTENDO PARA BINÁRIO: ', '\033[1;34m', bin(numero)[2:]), '\033[m'
         break
-    elif opção == '2':
-        octal = oct(numero)
-        print('CONVERTENDO PARA OCTAL: ', '\033[1;31m', str(octal[2:]), '\033[m')
+    elif opção == 2:
+        print('CONVERTENDO PARA OCTAL: ', '\033[1;31m', oct(numero)[2:]), '\033[m'
         break
-    elif opção == '3':
-        hexadecimal = hex(numero)
-        print('CONVERTENDO PARA HEXADECIMAL', '\033[1;32m', str(hexadecimal[2:]), '\033[m')
+    elif opção == 3:
+        print('CONVERTENDO PARA HEXADECIMAL', '\033[1;32m', hex(numero)[2:]), '\033[m'
         break
     else:
-        opção = str(input('Opção inválida... Digite um valor entre [1 - 3]'))[0]
+        opção = str(input('Opção inválida... Digite um valor entre [1 - 3]'))
