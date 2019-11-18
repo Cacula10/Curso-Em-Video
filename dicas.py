@@ -11,3 +11,4 @@
 # para finalizar usamos o \033[-m  somente isso
 
 # ex033 ajuda comparar 3 valores
+
