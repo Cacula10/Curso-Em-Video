@@ -13,4 +13,3 @@ elif media >= 5 and media < 7:
     print('\033[1;36mRECUPERAÇÃO\033[m')
 else:
     print('\033[1;32mAPROVADO!\033[m')
-
