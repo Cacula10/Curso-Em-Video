@@ -6,7 +6,7 @@
 
 # Como centralizar um print =======   print('{:=^35}'.format(' Carregando Resultados...')) ==== ex.028.py
 
-# Aula 11 ensina as cores e no exercicio 30 também
+# Aula 11 ensina as cores e no exercicio 30,39 também
 # \033[0,1,4,7;  30,31,32,33,34,35,36,37;   40,41,42,43,44,45,46,47 e termina com o m
 # para finalizar usamos o \033[-m  somente isso
 
