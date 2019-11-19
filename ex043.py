@@ -14,13 +14,13 @@ print('\033[1;34m*\033[m' * 35)
 if imc < 18.5:
     print('O seu IMC é: {:.1f} = '.format(imc), end='')
     print('MAGREZA')
-elif imc < 25:
+elif 18.5 <= imc < 25:
     print('O seu IMC é: {:.1f} = '.format(imc), end='')
     print('NORMAL')
-elif imc < 30:
+elif 25 <= imc < 30:
     print('O seu IMC é: {:.1f} = '.format(imc), end='')
     print('SOBREPESO')
-elif imc < 40:
+elif 30 <= imc < 40:
     print('O seu IMC é {:.1f} = '.format(imc), end='')
     print('OBESIDADE')
 else:
