@@ -12,3 +12,5 @@
 
 # ex033 ajuda comparar 3 valores
 # ex044 Ensina a centralizar texto
+
+# no exericio 45 eu uso o randint e o choice
