@@ -1,7 +1,7 @@
 from time import sleep
 from random import choice
 
-print('{:=^50}'.format('\033[1;33m JO\033[m\033[1;31m KEN\033[m \033[1;35mPO\033[m '))
+print('{:=^70}'.format('\033[1;33m JO\033[m\033[1;31m KEN\033[m \033[1;35mPO\033[m '))
 print('''[1] PAPEL
 [2] TESOURA
 [3] PEDRA''')
