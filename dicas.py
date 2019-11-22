@@ -14,3 +14,21 @@
 # ex044 Ensina a centralizar texto
 
 # no exericio 45 eu uso o randint e o choice
+
+""""
+COMO CONECTAR NA BASE
+
+conn = pyodbc.connect(
+    "Driver={SQL Server Native Client 11.0};"
+    "Server=10.100.188.129\ISAJ01;"
+    "Database=SPJUSP;"
+    "uid=saj;pwd=nltrecRephlcrA"
+)
+
+cursor = conn.cursor()
+
+cursor.execute("SQL")
+
+
+
+"""
