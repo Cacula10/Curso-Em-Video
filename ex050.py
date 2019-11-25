@@ -1,5 +1,5 @@
 print('=>' * 35)
-print('{:^70}'.format('SOMA DOS NUMEROS PARES'))
+print('{:^70}'.format('\033[1;34mSOMA DOS NUMEROS PARES\033[m'))
 print('=>' * 35)
 
 soma = 0
