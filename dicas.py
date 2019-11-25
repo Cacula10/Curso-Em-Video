@@ -29,6 +29,5 @@ cursor = conn.cursor()
 
 cursor.execute("SQL")
 
-
-
 """
+
