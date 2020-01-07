@@ -15,6 +15,9 @@
 
 # no exericio 45 eu uso o randint e o choice
 
+# Utilizo o strip para eliminar os espaços de antes e depois das frases (evitar erros do usuario)
+# Utilizo o split para tirar os espaços do meio da frase e depois o join para juntar tudo desconsiderando os espaços
+
 """"
 COMO CONECTAR NA BASE
 
