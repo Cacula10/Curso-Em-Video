@@ -1,14 +1,15 @@
+from datetime import date
+# Cabeçalho
+
 print('\033[31m=>\033[m' * 35)
 print('{:^70}'.format('\033[32mCALCULO DE MAIOR IDADE\033[m'))
 print('\033[31m=>\033[m' * 35)
 print('')
 # Variaveis
+
 maior = 0
 menor = 0
-
-from datetime import datetime
-
-atual = datetime.today().year
+atual = date.today().year
 
 for i in range(0, 7):
     idade = int(input('Em que ano a {} pessoa nasceu ? '.format(i+1)))
