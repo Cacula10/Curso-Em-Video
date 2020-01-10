@@ -18,6 +18,9 @@
 # Utilizo o strip para eliminar os espaços de antes e depois das frases (evitar erros do usuario)
 # Utilizo o split para tirar os espaços do meio da frase e depois o join para juntar tudo desconsiderando os espaços
 
+# para localizar extremos dentro de uma lista, veja exercicio 55 com o laço for
+
+
 """"
 COMO CONECTAR NA BASE
 
