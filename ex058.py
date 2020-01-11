@@ -23,6 +23,4 @@ while palpite != sorteio:
     contador += 1
     palpite = int(input('Qual o seu palpite? '))
 print('Acertou com {} tentativa(s). Parabens !'.format(contador))
-print(palpite, 'palpite')
-print(sorteio, 'sorteio')
-print('fim')
+
