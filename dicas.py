@@ -20,6 +20,12 @@
 
 # para localizar extremos dentro de uma lista, veja exercicio 55 com o laço for (sempre progamar desssa forma e nao fazer gambiarra)
 
+# Estruras de repeticão For e While >>> Usamos a estrutura while pois ela permite encontrar algo quando não sabemos aonde esse algo esta... diferente do for que precisamos colocar um range de 1-10, por exemplo... Quando você nao sabe o limite da sua lista e deseja percorrrer ela, entao usamos o while entao ele percorrre a lista até encontrar (lembrar que precisar conhecer o conteudo da sua lista para fazer o while(enquanto) senao ele pode se perder no meio do caminho)
+# estrutra while é quando nao sabemos o limite
+# no for eu preciso de um padrao e no while não...no while com ajudar de um if consigo fazer qualquer coisa
+# no while aula14 ele usa 3 "if" if tiver chão anda...if tiver buraco pula.. if tiver moeda pega... até chegar na maça
+# nao existe mais rapido entre o while e o for
+# Exercicioo 056 ajuda a usar o "in" dentro do laço for, ao invez de usar o .upper(), podemos usar o in
 
 """"
 COMO CONECTAR NA BASE
