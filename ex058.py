@@ -10,6 +10,9 @@ print('Será que consegue adivinhar qual foi ? ')
 from random import randint
 sorteio = randint(1, 10)
 
+# variavel
+contador = 1
+
 # programa
 palpite = int(input('Qual o seu palpite ? '))
 while palpite != sorteio:
@@ -17,7 +20,9 @@ while palpite != sorteio:
         print('Menos... Tente outra vez.')
     else:
         print('Mais... Tente outra vez.')
+    contador += 1
     palpite = int(input('Qual o seu palpite? '))
+print('Acertou com {} tentativa(s). Parabens !'.format(contador))
 print(palpite, 'palpite')
 print(sorteio, 'sorteio')
 print('fim')
