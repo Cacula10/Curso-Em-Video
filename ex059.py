@@ -1,3 +1,7 @@
+# cabeçalho
+print('\033[31m<>\033[m' * 15)
+print('{:^35}'.format('\033[32mEXERCICIO 59\033[m'))
+print('\033[31m<>\033[m' * 15)
 v1 = int(input('Primeiro valor: '))
 v2 = int(input('Segundo valor: '))
 opcao = 0
