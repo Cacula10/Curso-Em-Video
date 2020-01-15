@@ -26,7 +26,7 @@
 # no while aula14 ele usa 3 "if" if tiver chão anda...if tiver buraco pula.. if tiver moeda pega... até chegar na maça
 # nao existe mais rapido entre o while e o for
 # Exercicioo 056 ajuda a usar o "in" dentro do laço for, ao invez de usar o .upper(), podemos usar o in
-
+# exercicios 65 posso usar p lembrar como faço para achar o menor e maior valor
 """"
 COMO CONECTAR NA BASE
 
