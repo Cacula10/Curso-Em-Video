@@ -20,7 +20,7 @@ while continua not in 'Nn':
     contador += 1
     média = soma / contador
 
-print('Você digitou \033[31m{}\033[m numeros e a media foi \033[31m{}\033[m'.format(contador, média))
+print('Você digitou \033[31m{}\033[m numeros e a media foi \033[31m{:.2f}\033[m'.format(contador, média))
 print('O maior valor foi \033[31m{}\033[m e o menor \033[31m{}\033[m.'.format(maior, menor))
 
 
