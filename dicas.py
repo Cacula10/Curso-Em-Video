@@ -27,6 +27,9 @@
 # nao existe mais rapido entre o while e o for
 # Exercicioo 056 ajuda a usar o "in" dentro do laço for, ao invez de usar o .upper(), podemos usar o in
 # exercicios 65 posso usar p lembrar como faço para achar o menor e maior valor
+# do while nao existe em python porem podemos fazer de outra forma
+# Eu uso o while True quando eu quiser fazer algo infinito ou até que ele encontre algo e eu uso o break para sair do laço. (aula 15)
+
 """"
 COMO CONECTAR NA BASE
 
