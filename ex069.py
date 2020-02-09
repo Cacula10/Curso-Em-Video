@@ -2,7 +2,7 @@ print('{:^50}'.format('\033[1:33mEXERCICIO   069\033[m'))
 print()
 continuar = 'S'
 maioridade = homens = mulhermenor = 0
-while continuar is True:
+while True:
     print('\033[1:31m<=>\033[m' * 15)
     print('{:^40}'.format('CADASTRE UMA PESSOA'))
     print('\033[1:31m<=>\033[m' * 15)
@@ -22,8 +22,8 @@ while continuar is True:
     while continuar not in 'SN':
         print('Favor digitar correto [S/N]')
         continuar = str(input('Quer continuar [S/N]')).upper().strip()[0]
-        if continuar == 'N':
-            break
+    if continuar == 'N':
+        break
 print('FIM DO PROGRAMA')
 print(f'Total de pessoas com mais de 18 anos: {maioridade}')
 print(f'Ao todo temos {homens} homem(s) cadastrado')
