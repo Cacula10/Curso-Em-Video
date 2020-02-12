@@ -29,7 +29,7 @@
 # exercicios 65 posso usar p lembrar como faço para achar o menor e maior valor
 # do while nao existe em python porem podemos fazer de outra forma
 # Eu uso o while True quando eu quiser fazer algo infinito ou até que ele encontre algo e eu uso o break para sair do laço. (aula 15)
-
+# Exercicio 72 é um bom exemplo e simples de como usar o while true.
 """"
 COMO CONECTAR NA BASE
 
