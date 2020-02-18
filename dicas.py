@@ -30,6 +30,8 @@
 # do while nao existe em python porem podemos fazer de outra forma
 # Eu uso o while True quando eu quiser fazer algo infinito ou até que ele encontre algo e eu uso o break para sair do laço. (aula 15)
 # Exercicio 72 é um bom exemplo e simples de como usar o while true.
+# quando o programa fica aguardando uma instrução, verificar se coloquei um while True sem o break
+
 """"
 COMO CONECTAR NA BASE
 
