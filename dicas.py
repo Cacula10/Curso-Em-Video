@@ -31,7 +31,7 @@
 # Eu uso o while True quando eu quiser fazer algo infinito ou até que ele encontre algo e eu uso o break para sair do laço. (aula 15)
 # Exercicio 72 é um bom exemplo e simples de como usar o while true.
 # quando o programa fica aguardando uma instrução, verificar se coloquei um while True sem o break
-
+# Exercicio 080 serve para entender como fazer para consultar se um valor é maior ou menor dentro de lista e inseri-lo na posição correta sem usar o sort
 """"
 COMO CONECTAR NA BASE
 
