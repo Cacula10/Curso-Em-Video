@@ -32,6 +32,8 @@
 # Exercicio 72 é um bom exemplo e simples de como usar o while true.
 # quando o programa fica aguardando uma instrução, verificar se coloquei um while True sem o break
 # Exercicio 080 serve para entender como fazer para consultar se um valor é maior ou menor dentro de lista e inseri-lo na posição correta sem usar o sort
+# para achar um menor ou menor dentro de uma lista com outra lista.... antes de fazer o append na lista principal eu faço o "if len(listaprincipal) == 0" e depois eu faço o append e o clear"
+
 """"
 COMO CONECTAR NA BASE
 
