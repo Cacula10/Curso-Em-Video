@@ -19,13 +19,13 @@ while True:
     if resp == 'N':
         break
 print(f'Ao todo, você cadastrou {len(principal)} pessoas')
-print(f'O maior peso foi de {maior}kg. Peso de ', end=' ')
+print(f'O maior peso foi de \033[1:31m{maior}\033[m kg. Peso de', end=' ')
 for p in principal:
     if p[1] == maior:
         print(f'{p[0]}', end=' ')
 print('')
-print(f'O menor peso foi de {menor}Kg. Peso de ', end=' ')
+print(f'O menor peso foi de \033[1:31m{menor}\033[m Kg. Peso de', end=' ')
 for p in principal:
     if p[1] == menor:
-        print(f'{p[0]}',end=' ')
+        print(f'{p[0]}', end=' ')
 print('')
