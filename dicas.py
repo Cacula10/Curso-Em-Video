@@ -33,6 +33,7 @@
 # quando o programa fica aguardando uma instrução, verificar se coloquei um while True sem o break
 # Exercicio 080 serve para entender como fazer para consultar se um valor é maior ou menor dentro de lista e inseri-lo na posição correta sem usar o sort
 # para achar um menor ou menor dentro de uma lista com outra lista.... antes de fazer o append na lista principal eu faço o "if len(listaprincipal) == 0" e depois eu faço o append e o clear"
+# Dica para adicionar lista sobre listas é inicializar uma com o modelo que deseja. Exemplo "lista = [[], []]" depois vou no append lista[0].append() ou lista[1].append
 
 """"
 COMO CONECTAR NA BASE
