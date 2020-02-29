@@ -2,6 +2,7 @@ print('-' * 25)
 print('{:^25}'.format('\033[31mJOGO DA MEGA SENA\033[m'))
 print('-' * 25)
 from random import randint
+from time import sleep
 lista = []
 lmega = []
 palpite = int(input('Quantos sorteios da MEGA SENA, deseja fazer ? '))
@@ -24,5 +25,8 @@ while total <= palpite:
 print('-' * 25)
 print('{:^25}'.format('\033[1:31mRESULTADO DOS SEUS JOGOS\033[m'))
 print('-' * 25)
-for jogo in lmega:
-    print(jogo)
+for l, c in enumerate(lmega):
+    print(f'Jogo {l+1} = {c}')
+    sleep(1)
+print('-' * 25)
+print('BOA SORTE')
