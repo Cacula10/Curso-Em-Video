@@ -5,7 +5,7 @@ from random import randint
 lista = []
 lmega = []
 palpite = int(input('Quantos sorteios da MEGA SENA, deseja fazer ? '))
-total = 0
+total = 1
 while total <= palpite:
     cont = 0 # esse contador precisa estar aqui para que ele seja zerado, após a lista estar preenchida. Senao o while d baixo nao vai ser executado na segunda vez, pois o "cont" ja é igual a "6"
     while True:
