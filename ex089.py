@@ -28,4 +28,5 @@ while True:
     opcao = int(input('Mostrar nota de qual aluno ? (999 para interromper): '))
     if opcao == 999:
         break
-    print(f'As notas do {lista[opcao][0]} são {lista[opcao][1]}')
+    if opcao <= len(lista) - 1:
+        print(f'As notas do {lista[opcao][0]} são {lista[opcao][1]}')
