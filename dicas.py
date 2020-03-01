@@ -35,6 +35,8 @@
 # para achar um menor ou menor dentro de uma lista com outra lista.... antes de fazer o append na lista principal eu faço o "if len(listaprincipal) == 0" e depois eu faço o append e o clear"
 # Dica para adicionar lista sobre listas é inicializar uma com o modelo que deseja. Exemplo "lista = [[], []]" depois vou no append lista[0].append() ou lista[1].append
 # Exercicio 089 da uma boa dica de como criar sting dentro de string
+# Para ordenar um dicionario o ideal e jogar tudo para uma lista e usar o metodo "itemgetter", exercicio 91.
+
 """"
 COMO CONECTAR NA BASE
 
