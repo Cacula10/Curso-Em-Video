@@ -1,20 +1,25 @@
-futebol = dict()
-artilharia = list()
+print('-' * 30)
+print('{:^30}'.format('EXERCICIO 93'))
+print('-' * 30)
+gols = []
+totalgol = 0
+dicionario = dict()
+nome = str(input('Nome do Jogador: ')).capitalize()
+partidas = int(input(f'Quantas partidas o [{nome}] jogou? '))
 
-futebol["Nome"] = str(input('Nome do jogador: '))
-partidas = int(input(f'Quantas partidas {futebol["Nome"]} jogou ? '))
-
-for c in range(0, partidas):
-    artilharia.append(int(input(f'Quantos goals na partida {c+1}: ')))
-futebol["goals"] = artilharia[:]
-futebol["total"] = sum(artilharia)
-print('=-' * 35)
-print(futebol)
-print('=-' * 35)
-for k, v in futebol.items():
+for i in range(1, partidas+1):
+    gols.append(int(input(f'Quantos gols na partida {i}: ')))
+    totalgol += gols[i-1]
+dicionario['Nome'] = nome
+dicionario['Gols'] = gols
+dicionario['Total'] = totalgol
+print('=-' * 30)
+print(dicionario)
+print('=-' * 30)
+for k, v in dicionario.items():
     print(f'O campo {k} tem o valor {v}')
-print('=-' * 35)
-print(f'O jogador {futebol["Nome"]} jogou {partidas} partidas')
-
-for i, v in enumerate(futebol["goals"]):
-    print(f' => Na partida {i}, fez {v} goals')
+print('=-' * 30)
+print(f'O jogador {dicionario["Nome"]} jogou {partidas} partidas.')
+for i, v in enumerate(gols):
+    print(f'=> Na partida {i+1} fez {v} gols')
+print(f'Foi um total de {dicionario["Total"]} gols')
