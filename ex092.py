@@ -1,18 +1,19 @@
+print('-' * 30)
+print('{:^30}'.format('EXERCICIO 92'))
+print('-' * 30)
 from datetime import datetime
-funcionario = dict()
-
-funcionario["Nome"] = str(input('Nome: '))
-nascimento = int(input('Ano de Nascimento: '))
-funcionario["idade"] = datetime.now().year - nascimento
-funcionario["CTPS"] = int(input('Carteira de Trabalho [0 não tem]: '))
-if funcionario["CTPS"] != 0:
-    funcionario["Contratação"] = int(input('Ano de Contratação: '))
-    funcionario["Salário"] = float(input('Salário: '))
-    funcionario["Aposentadoria"] = 35 - (datetime.now().year - funcionario["Contratação"] )
-else:
-    print(funcionario["Nome"])
-    print(funcionario["idade"])
-    print(funcionario["CTPS"])
-
-for k, v in funcionario.items():
-    print(f'{k} = {v}')
+dicionario = dict()
+while True:
+    dicionario['Nome'] = str(input('Nome: '))
+    nascimento = int(input('Ano de Nascimento: '))
+    dicionario['Idade'] = datetime.now().year - nascimento
+    dicionario['CTPS'] = str(input('Carteira de Trabalho (0 não tem): '))
+    if dicionario['CTPS'] == '0':
+        break
+    dicionario['Contratacao'] = int(input('Ano de Contratação: '))
+    dicionario['Salario'] = float(input('Sálario: '))
+    dicionario['Aposentadoria'] = (35 - (datetime.now().year - dicionario["Contratacao"])) + datetime.now().year
+    break
+print('-' * 30)
+for k, v in dicionario.items():
+    print(f'\033[1:31m{k:<15}\033[m tem valor de \033[1:31m{v:>10}\033[m')

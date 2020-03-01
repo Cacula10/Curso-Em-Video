@@ -1,7 +1,8 @@
-print('-' * 25)
-print('{:^25}'.format('EXERCICIO 91'))
-print('-' * 25)
-print('VALORES SORTEADOS')
+print('-' * 30)
+print('{:^30}'.format('EXERCICIO 91'))
+print('-' * 30)
+print('{:^30}'.format('VALORES SORTEADOS'))
+print('-' * 30)
 from random import randint
 from time import sleep
 from operator import itemgetter
@@ -11,6 +12,8 @@ dicionario = {'Jogador 1': randint(1, 6), 'Jogador 2': randint(1, 6), 'Jogador 3
 for k, v in dicionario.items():
     print(f'O {k} tirou {v} no dado.')
     sleep(0.5)
+print('-' * 30)
+print('{:^30}'.format('RANKING DOS JOGADORES'))
 print('-' * 30)
 sorteio = sorted(dicionario.items(), key=itemgetter(1), reverse=True)
 
