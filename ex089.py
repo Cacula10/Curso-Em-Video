@@ -4,8 +4,8 @@ print('-' * 25)
 lista = []
 while True:
     nome = str(input('Digite o seu nome: '))
-    nota1 = int(input('Digite a sua nota 01: '))
-    nota2 = int(input('Digite a sua nota 02: '))
+    nota1 = float(input('Digite a sua nota 01: '))
+    nota2 = float(input('Digite a sua nota 02: '))
     media = (nota1 + nota2) / 2
     lista.append([nome, [nota1, nota2], media]) # nesse momento eu ja salvo a lista da forma que desejo e da minha logica criada.
     continua = ' '
