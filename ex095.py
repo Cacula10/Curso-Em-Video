@@ -1,45 +1,49 @@
-futebol = dict()
-artilharia = list()
-clube = list()
-
+print('-' * 30)
+print('{:^30}'.format('EXERCICIO 95'))
+print('-' * 30)
+dictjogaodores = dict()
+listagols = list()
+listajogadores = list()
+totalgols = 0
 while True:
-    artilharia.clear()
-    futebol["Nome"] = str(input('Nome do jogador: '))
-    partidas = int(input(f'Quantas partidas {futebol["Nome"]} jogou ? '))
-    for c in range(0,partidas):
-        artilharia.append(int(input(f'Quantos goals na partida {c+1}: ')))
-    futebol["goals"] = artilharia[:]
-    futebol["total"] = sum(artilharia)
-    opc = str(input('Deseja continuar ? [S/N] ')).upper()[0]
-    clube.append(futebol.copy())
-    if opc == 'N':
+    dictjogaodores.clear() # O ideal é fazer a limpeza aqui na parte de cima
+    listagols.clear()
+    dictjogaodores['Nome'] = str(input('Nome do Jogador: ')).capitalize()
+    partidas = int(input(f'Quantas partidas \033[1:34m{dictjogaodores["Nome"]}\033[m jogou ? '))
+    for i in range(1, partidas+1):
+        listagols.append(int(input(f'Quantos gols na partida {i+1}: ')))
+    dictjogaodores['Gols'] = listagols[:]
+    dictjogaodores['Total'] = sum(listagols)
+    listajogadores.append(dictjogaodores.copy())
+    while True:
+        continuar = str(input('Quer continuar [S/N] ? ')).upper()[0]
+        if continuar in 'SN': # enquanto ele nao colococar S ou N "print" o "Erro!" Senao ele sai desse while True
+            break
+        print('Erro! Responda apenas S ou N')
+    if continuar == 'N':
         break
-    if opc not in 'SN':
-        opc = str(input('ERRO... Escolha S/N: ')).upper()[0]
+# Finalização do código de imput
 
-print('=-' * 35)
-print(clube)
-print('=-' * 35)
-
-print(f'{"Cod."}',end=' ')
-for k in futebol.keys():
-    print(f'{k:<15}',end=' ')
+print('-' * 80)
+print('Cod', end=' ')
+for i in dictjogaodores.keys():
+    print(f'{i:<20}', end=' ')
 print()
-print('=-' * 35)
-for i, n in enumerate(clube):
-    print(f'{i:<5}',end=' ')
-    for d in n.values():
-        print(f'{str(d):<15}',end=' ')
-    print('')
-
+print('-' * 80)
+for k, v in enumerate(listajogadores):
+    print(f'{k:>3}', end=' ')
+    for d in v.values():
+        print(f'{str(d):<20}', end=' ')# para exibição de "d" precisa converter para "str".
+    print()
 while True:
-    opc = int(input('Informe um numero da lista para detalhes: [999] para encerrar: '))
+    opc = int(input('Mostrar dados de qual jogador (999 para interromper): '))
     if opc == 999:
         break
-    elif opc >= len(clube):
-        print(f'ERRO!  Não existe jogodor com o codigo de busca {opc} ')
+    if opc >= len(listajogadores):
+        print(f'ERRO! Não existe jogador com esse código de busca {opc}')
     else:
-        print(f'Levantamento de dados do jogador {clube[opc]["Nome"]}')
-
-        for i, g in enumerate(clube[opc]['goals']):
-            print(f'No jogo {i} fez {g} gols')
+        print(f'Levantamento de dados do jogaoor {listajogadores[opc]["Nome"]}')
+        for i, g in enumerate(listajogadores[opc]["Gols"]):# Aqui eu acesso uma lista dentro de um dicionario e dentro de uma outra lista
+            print(f'No jogo {i+1} fez {g} gols.')
+    print('-' * 80)
+print('<<<FIM>>>')
