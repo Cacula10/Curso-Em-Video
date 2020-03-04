@@ -1,7 +1,8 @@
 def escreva(msg):
-    print('~' * len(msg))
-    print(msg)
-    print('~' * len(msg))
+    tam = len(msg) + 4
+    print('~' * tam)
+    print(f'  {msg}')
+    print('~' * tam)
 
 
 escreva('Flávio de Souza Marques')
