@@ -8,7 +8,6 @@ def sorteio(num):
     for v in range(1, num+1):
         lista.append(randint(1, 10))
 
-
 def pares():
     soma = 0
     for v in lista:
