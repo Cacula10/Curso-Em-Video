@@ -1,15 +1,22 @@
-def ficha(jogador='<Desconhecido>', artilheiro = 0):
-    print(f'O Jogador {jogador} fez {artilheiro} gol(s)')
+def ficha(nome='<<desconhecido>>', gol=0):
+    print('-' * 20)
+    global nomes, gols
+    if len(nomes) > 0:
+        if gols not in '0' and gols.isdigit():
+            return f'O jogador {nomes} fez {gols} gols no campeonato'
+        else:
+            return f'O jogador {nomes} fez {0} gols no campeonato'
+    elif len(nomes) == 0:
+        if gols not in '0' and gols.isdigit():
+            return f'O jogador <<desconhecido>> fez {gols} gols no campeonato'
+        else:
+            return f'O jogador <<desconhecido>> fez {0} gols no campeonato'
+    else:
+        return f'O jogador{nome} fez {gol} no campeonato'
 
-nome = str(input('Nome do jogador: '))
-gols = str(input('Quantos gols você fez: '))
 
-if gols.isnumeric():
-    gols = int(gols)
-else:
-    gols = 0
+# Programa Principal
+nomes = str(input('Nome do Jogador: ')).capitalize()
+gols = str(input('Numero de gols: '))
+print(ficha(nomes, gols))
 
-if nome.strip() == '':
-    ficha(artilheiro=gols)
-else:
-    ficha(nome,gols)
