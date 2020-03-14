@@ -36,7 +36,7 @@
 # Dica para adicionar lista sobre listas é inicializar uma com o modelo que deseja. Exemplo "lista = [[], []]" depois vou no append lista[0].append() ou lista[1].append
 # Exercicio 089 da uma boa dica de como criar sting dentro de string
 # Para ordenar um dicionario o ideal e jogar tudo para uma lista e usar o metodo "itemgetter", exercicio 91.
-
+# Exercicio 105 mostra como usar dois parametros em def com o True e False
 """"
 COMO CONECTAR NA BASE
 
