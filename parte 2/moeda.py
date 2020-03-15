@@ -4,7 +4,7 @@ def aumentar(numero, taxa):
 
 
 def diminuir(numero, taxa):
-    resp = (numero * taxa) - numero
+    resp = numero - (numero * taxa)
     return resp
 
 
