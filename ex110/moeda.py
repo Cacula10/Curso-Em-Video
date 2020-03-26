@@ -40,8 +40,8 @@ def resumo(valor, aumento=0, diminui=0):
     print(f'Preço Analisado: \t{moeda(valor)}')
     print(f'Dobro do Preço: \t{dobro(valor, True)}')
     print(f'Metade do Preço: \t{metade(valor, True)}')
-    print(f'10% de Aumento: \t{aumentar(valor, aumento/100, True)}')
-    print(f'20% de Redução: \t{diminuir(valor, diminui/100, True)}')
+    print(f'{aumento}% de Aumento: \t\t{aumentar(valor, aumento/100, True)}')
+    print(f'{diminui}% de Redução: \t{diminuir(valor, diminui/100, True)}')
     print('-' * 30)
 
 
