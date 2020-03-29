@@ -8,4 +8,4 @@ def leiaint(n):
 
 # Programa Principal
 n = leiaint('Digite um numero: ')
-print(f'Você acabou de digitar o número {numero}')
+#print(f'Você acabou de digitar o número {numero}')
